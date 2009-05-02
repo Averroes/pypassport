@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
 #labels Phase-Implementation
+#pypassport API user guide
 
 = 1 Data source  =
 
@@ -111,4 +111,119 @@ The iterator is also available on the EPassport dictionnary. It will read every 
 {{{
 for dg in ep:
     print ep[dg]
+}}}
+
+== 3.2 OpenSSL ==
+
+The API needs openssl to perform the security features. It have to know the localization of openssl. The main executable must be in the path. If it is not the case, set manualy the complete path to openssl.exe
+
+{{{
+ep.openSslDirectory = "C:\\OpenSSL\\bin\\openssl"
+}}}
+
+== 3.3 Active Authentication ===
+
+The Active Authentication can only be performed using an rfid reader. It does not work with the simulator.
+
+{{{
+>>> try:
+>>>     print ep.doActiveAuthentication()
+>>> except epassport.activeauthentication.ActiveAuthenticationException, msg:
+>>>     print msg
+>>> except epassport.iso7816.SimIso7816Exception, msg:
+>>>     print msg
+True
+}}}
+
+== 3.4 Passive Authentication ==
+
+The Passive Authentication is done in two distinct steps: 
+
+  * First verify the DS Certificate contained in the SOD. 
+To verify the Document Signer Certificate you need the CVCA Certificate. You have to specify the directory containing these certificates, and to ask the hash operation each time new certificates are added into the directory. 
+
+If you do not hash the certificates, openssl will not be able to find the CVCA certificate associated with the DS certificate.
+
+{{{
+ep.setCSCADirectory('D:\\workspace\\pypassport\\src\\data\\cert', hash=True)
+try:
+    print ep.doVerifySODCertificate()
+except epassport.passiveauthentication.PassiveAuthenticationException, msg:
+    print msg
+except epassport.openssl.OpenSSLException, msg:
+    print msg
+}}}
+
+  * Once the certificate is verified (or not), you can verify the data group integrity.
+
+If you call it without argument, the verification is done for every epassport
+data groups. 
+
+The method returns a dictionnary with the DG name as key and a boolean as value.
+
+{{{
+>>> try:
+>>>     print ep.doVerifyDGIntegrity()
+>>> except epassport.passiveauthentication.PassiveAuthenticationException, msg:
+>>>     print msg
+>>> except epassport.openssl.OpenSSLException, msg:
+>>>     print msg
+{'DG15': True, 'DG11': True, 'DG12': False, 'DG2': True, 'DG1': True, 'DG7': True}
+}}}
+
+Or you can give a list of DataGroup object to verify. 
+
+{{{
+>>> try:
+>>>     l = []
+>>>     l.append(ep["DG1"])
+>>>     l.append(ep["DG2"])
+>>>     print ep.doVerifyDGIntegrity(l)
+>>> except epassport.passiveauthentication.PassiveAuthenticationException, msg:
+>>>     print msg
+>>> except epassport.datagroup.DataGroupException , msg:
+>>>     print msg
+>>> except epassport.openssl.OpenSSLException, msg:
+>>>     print msg
+{'DG2': True, 'DG1': True}
+}}}
+
+== 3.5 Information retrieval and data dump ===
+
+Finally you can retrieve the face, the signature, the DS Certificate and the public key from the epassport (if available), and you can write it on disk. 
+
+The getSignatures and getFaces method return a list of binary string, and getPublicKey and getCertificate return a text string.
+
+{{{
+signatures = ep.getSignatures()
+faces = ep.getFaces()
+pubKey = ep.getPublicKey()
+DSC = ep.getCertificate()
+
+dgd = epassport.datagroup.DataGroupDump("C:\\tmp")
+
+cpt=0
+for sig in signatures:
+    dgd.dumpData(sig, "signature" + str(cpt) + ".jpg")
+    cpt += 1
+    
+cpt=0
+for face in faces:
+    dgd.dumpData(face, "face" + str(cpt) + ".jpg")
+    cpt += 1
+
+dgd.dumpData(pubKey, "pubKey.pk")
+dgd.dumpData(DSC, "DS.cer")
+}}}
+
+You can also dump some specific data group
+
+{{{
+dgd.dumpDG(ep["DG1"])
+}}}
+
+Or the whole epassport content
+
+{{{
+dgd.dump(ep)
 }}}
