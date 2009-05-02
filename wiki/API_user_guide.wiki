@@ -95,7 +95,7 @@ To know the meaning of a tag, you can use the dictionnary present in the file py
 5A> Document Number: EH276509<
 }}}
 
-When an invalid data group is requested, a DataGroupException is raised. You can access data groups using tag (like before) or using [Common, DG1 .. DG16, SecurityData] notation.  
+When an invalid data group is requested, a DataGroupException is raised. You can access data groups using tag (like before) or using Common, DG1 .. DG16, SecurityData notation.  
 Have a look at this file for every valid notations: pypassport.doc9303.converter.py
 
 {{{
@@ -115,7 +115,7 @@ for dg in ep:
 
 == 3.2 OpenSSL ==
 
-The API needs openssl to perform the security features. It have to know the localization of openssl. The main executable must be in the path. If it is not the case, set manualy the complete path to openssl.exe
+The API needs openssl to perform the security features. It have to know the localization of openssl. The main executable must be in the path. If it is not the case, set manually the complete path to openssl.exe
 
 {{{
 ep.openSslDirectory = "C:\\OpenSSL\\bin\\openssl"
