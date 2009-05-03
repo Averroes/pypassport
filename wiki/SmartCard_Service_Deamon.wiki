@@ -9,6 +9,8 @@ This page describe how to start it.
 
 == Start Smart Card service on Windows ==
 
+*!* Since version 0.2b the application try to start the service for you.
+
 On Windows platforms the service can be started using command-line or using adminstration tools from the control panel.
 
 === Command line ===
