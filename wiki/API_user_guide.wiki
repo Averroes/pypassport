@@ -1,4 +1,4 @@
-#summary pypassport API user guide
+#summary pypassport: API user guide
 #labels Phase-Implementation,Featured
 
 = 1 Data source  =
