@@ -1,4 +1,4 @@
-#summary The security labels are orange
+#summary epassportviewer: The security labels are orange
 
 If the security labels are orange, it means that OpenSSL is not available.
 
