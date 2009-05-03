@@ -3,7 +3,9 @@
 
 = PCSCException =
 
-If you get an smartcard.pcsc.PCSCExceptions.EstablishContextException it means your smart card service is not running. This page describe how to start it.
+If you get an smartcard.pcsc.PCSCExceptions.EstablishContextException it means your smart card service is not running. 
+
+This page describe how to start it.
 
 == Start Smart Card service on Windows ==
 
@@ -11,20 +13,26 @@ On Windows platforms the service can be started using command-line or using admi
 
 === Command line ===
 
-Scripts are located in the $Windows\System32 directory. The following command start the smart card service:
+Scripts are located in the $Windows\System32 directory. 
+
+The following command start the smart card service:
 
     C:\WINDOWS\system32>net start scardsvr
 
 === Control panel (tested on Windows XP) ===
 
 In the control panel, select _adminstration_ _tools_ and then _services_.
-Search for an entry called *smartcard* (not sure of the name, it's *card* *à* *puce* in french). You can start it with a right-click and selecting *start*.
+
+Search for an entry called *smartcard* (not sure of the name, it's *card* *à* *puce* in french). 
+
+You can start it with a right-click and selecting *start*.
 
 In the properties you can also change it to start automatically on Windows startup.
 
 == Start Smart Card deamon on Linux ==
 
 Depending on your linux distribution the command to start the smart card deamon can change.
+
 On Ubuntu you can use the following command to start it :
 
     /etc/init.d/pcscd start
