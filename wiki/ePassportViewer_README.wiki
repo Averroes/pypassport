@@ -85,5 +85,9 @@ Full text available here in the [WikiSyntax GNU GPL, version 3 LICENSE] file, pr
 All you should know to use the software is available in the [WikiSyntax ePassport Viewer User Manual].
 	
 ==HISTORY==
+  * 0.2b (2009-05-02):
+    * Windows: Try to start the smartcard service if not running.
+  * 0.2a (2009-05-01):
+    * Windows: Resolved the pyasn1 problem on startup.
   * 0.2 (2009-04-30):
     * First public release. GPL 3 license.
