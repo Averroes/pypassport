@@ -1,9 +1,0 @@
-#summary epassportviewer: The security labels are orange
-
-If the security labels are orange, it means that OpenSSL is not available.
-
-
-= I use the epassportviewer zip for win32 =
-OpenSSL is embeded with the archive, if you encounter troubles, install redistribuable Microsoft Visual C++ 2008 
-
-http://www.microsoft.com/downloads/details.aspx?FamilyID=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF&displaylang=fr
