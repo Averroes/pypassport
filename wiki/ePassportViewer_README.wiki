@@ -1,5 +1,5 @@
 #summary README files included in the ePassport Viewer package
-#labels Featured,Phase-Deploy
+#labels Featured,Phase-Deploy,Deprecated
 
 =ePassport Viewer=
 
