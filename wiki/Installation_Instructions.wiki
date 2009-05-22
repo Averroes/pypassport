@@ -1,4 +1,6 @@
+#summary Installation guide
 #labels Featured,Phase-Deploy
+
 =pyPassport Installation Instructions=
 
 Until pyPassport reach a stable state the installation has to be done from source. Later binary packages will be released for the following platforms:
