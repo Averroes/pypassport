@@ -34,6 +34,8 @@ Python dependencies can be installed using the code sharing python platform [htt
     Python/scripts$ easy_install package_name
 }}}
 
+To install pyscard on MAC OSX you can use this [http://sourceforge.net/project/showfiles.php?group_id=196342&package_id=231986&release_id=628448 mpkg file] 
+
 ===Optional===
 
 To complete the installation, two additional packages should be installed:
