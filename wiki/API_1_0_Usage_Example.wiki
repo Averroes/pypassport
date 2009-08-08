@@ -1,5 +1,5 @@
+#summary pypassport: Usage example on how to use the API 1.0
 #labels Phase-Deploy,Featured
-#Usage example on how to use the API 1.0
 
 The API contains fake dumps and certificates in the directory testData
 
