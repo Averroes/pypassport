@@ -1,5 +1,5 @@
 #summary pypassport: API 0.1 user guide
-#labels Phase-Implementation,Featured
+#labels Phase-Implementation
 
 = 1 Data source  =
 
