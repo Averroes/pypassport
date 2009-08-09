@@ -1,15 +1,52 @@
-#summary pyPassport API 1.0 installation instructions
+#summary pyPassport API 1.0 installation instructions on windows Vista
 #labels Featured,Phase-Deploy
 
 = 1. Python =
 
 [http://python.org/download/releases/2.6.2/ Install python 2.6]
-http://python.org/download/releases/2.6.2/
+
+Add the python directiry to the path variable displayed in the Environment Variable panel (Windows Control Panel > System > Advanced > Environment Variables).
+
+= 2. Dependances =
+
+= 2.1 Mandatory =
+
+The dependances listed bellow are mandatory to use the basic functionalities of the API.
+
+=== 2.1.1 Setup tool ===
+
+ # [http://pypi.python.org/pypi/setuptools Download setuptools sources]
+ # Unzip it
+ # cd setuptools-x.x
+ # python setup.py install
+
+=== 2.1.2 pyCrypto ===
+
+ # [http://www.voidspace.org.uk/python/modules.shtml#pycrypto Download pycrypto-2.0.1.win32-py2.6.exe]
+ # Install it
+
+=== 2.1.3 pyasn1 ===
+ # [http://sourceforge.net/projects/pyasn1/files/ Download pyasn1 sources]
+ # Unzip it
+ # cd pyasn1-x.x.x
+ # python setup.py install
+
+=== 2.1.4 pyscard ===
+
+ # [http://sourceforge.net/projects/pyscard/files/ Download pyscard-1.6.8.win32-py2.6.msi]
+ # Install it
+
+== 2.2 Highly recommended ==
+
+The dependance listed bellow is mandatory to perform the Passive Authentication
+
+=== 2.2.1 OpenSSL ===
 
 
-= Details =
+= 3. pyPassport installation =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ # [http://pypassport.googlecode.com/files/pypassport-1.0.zip Download pyPassport 1.0]
+ # Unzip it
+ # cd pypassport-1.0
+ # 
+ 
