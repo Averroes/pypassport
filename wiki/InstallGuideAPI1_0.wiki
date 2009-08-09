@@ -48,5 +48,5 @@ The dependance listed bellow is mandatory to perform the Passive Authentication
  # [http://pypassport.googlecode.com/files/pypassport-1.0.zip Download pyPassport 1.0]
  # Unzip it
  # cd pypassport-1.0
- # 
+ # python setup.py install
  
