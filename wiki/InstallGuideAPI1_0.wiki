@@ -5,7 +5,7 @@
 
 [http://python.org/download/releases/2.6.2/ Install python 2.6]
 
-Add the python directiry to the path variable displayed in the Environment Variable panel (Windows Control Panel > System > Advanced > Environment Variables).
+Add the python directory to the path variable displayed in the Environment Variable panel (Windows Control Panel > System > Advanced > Environment Variables).
 
 = 2. Dependances =
 
