@@ -42,6 +42,10 @@ The dependance listed bellow is mandatory to perform the Passive Authentication
 
 === 2.2.1 OpenSSL ===
 
+PIL
+GPShell
+dexlab
+
 
 = 3. pyPassport installation =
 
