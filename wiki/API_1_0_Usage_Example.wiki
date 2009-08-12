@@ -8,8 +8,7 @@ from pypassport import epassport, reader
 from pypassport import fingerPrint
 
 def trace(name, msg):
-    if name == "EPassport":
-        print name + "> " + msg
+    print name + "> " + msg
 
 Sim=True
 AA=False
@@ -30,14 +29,11 @@ else:
     r.connect(DUMP_DIR)
 
 ep = epassport.EPassport(r, MRZ)
-#ep.register(trace)
+ep.register(trace)
 ep.setCSCADirectory(CSCA_DIR, HASH_CERTIF)
 
-fp = fingerPrint.FingerPrint(ep)
-print fp.analyse()
-
-#for dg in ep:
-#    print ep[dg]
+for dg in ep:
+    print ep[dg]
 
 if PA:
     try:
