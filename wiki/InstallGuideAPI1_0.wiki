@@ -9,9 +9,7 @@ Add the python directory to the path variable displayed in the Environment Varia
 
 = 2. Dependances =
 
-= 2.1 Mandatory =
-
-The dependances listed bellow are mandatory to use the basic functionalities of the API.
+== 2.1 ePassport Verification ==
 
 === 2.1.1 Setup tool ===
 
@@ -36,11 +34,7 @@ The dependances listed bellow are mandatory to use the basic functionalities of 
  # [http://sourceforge.net/projects/pyscard/files/ Download pyscard-1.6.8.win32-py2.6.msi]
  # Install it
 
-== 2.2 Highly recommended ==
-
-The dependance listed bellow is mandatory to perform the Passive Authentication
-
-=== 2.2.1 OpenSSL ===
+=== 2.1.5 OpenSSL ===
 
 PIL
 GPShell
