@@ -1,4 +1,4 @@
-#summary pypassport: API 1.0 user guide
+#summary pypassport API 1.0: User Guide
 #labels Featured,Phase-Implementation
 
 = 1 Modules Import  =
