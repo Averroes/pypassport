@@ -51,19 +51,19 @@ The following dependence is needed for the data group DG2 forgery.
 ==== 2.2.1.2 PIL ====
 
  # [http://www.pythonware.com/products/pil/  Download Python Imaging Library 1.1.6 for Python 2.6]
- #Install it
+ # Install it
 
 === 2.2.2 ePassport emulator uploading ===
 
 The following dependences are requries if you plan to upload the dexlab applet on your
 java card using the pyPassport API, for later upload the forger data groups.
 
-=== 2.2.2 GPShell ===
+=== 2.2.2.1 GPShell ===
  # [http://sourceforge.net/projects/globalplatform/ Download GPShell]
  # Unzip it
  # Add the GPShell-x.x.x directory to the path variable displayed in the Environment Variable panel.
 
-=== 2.2.3 dexlab ePassport emulator===
+=== 2.2.2.2 dexlab ePassport emulator===
  # [http://www.dexlab.nl/downloads.html Download ePassport emulator]
  
 The applet will be later uploaded to the JCOP card of your choice.
