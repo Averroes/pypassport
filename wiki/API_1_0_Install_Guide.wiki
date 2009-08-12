@@ -1,4 +1,4 @@
-#summary pyPassport API 1.0 installation instructions on windows Vista
+#summary pyPassport API 1.0: installation instructions on windows Vista
 #labels Featured,Phase-Deploy
 
 = 1. Python =
