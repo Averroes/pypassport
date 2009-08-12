@@ -36,6 +36,10 @@ Add the python directory to the path variable displayed in the Environment Varia
 
 === 2.1.5 OpenSSL ===
 
+ # [http://www.slproweb.com/products/Win32OpenSSL.html Download the OpenSSL binary Win32 OpenSSL v0.9.8k Light]
+ # Install it
+ # Add the OpenSSL/bin directory to the path variable displayed in the Environment Variable panel.
+
 PIL
 GPShell
 dexlab
