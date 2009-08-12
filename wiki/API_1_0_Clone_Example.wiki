@@ -1,4 +1,4 @@
-#summary pypassport API 1.0 ePassport cloning example
+#summary pypassport API 1.0: ePassport cloning example
 #labels Featured
 
 Before cloning an ePassport or sending dumps to a Java Card, the dexlab applet must be installed on the targeted Java Card. The applet can be installed if the APPLET variable is set to True, and if the variable APPLET_PATH contains the full path to the dexlab applet. It will be send on the Java Card present on the reader READER_NUM.
