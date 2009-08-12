@@ -7,7 +7,7 @@ If Sim is set to True, the dumps present in the DUMP_DIR are send to the initial
 
 If Sim is set to False, the original must first be put on the reader, then the data DG 15 is removed if present and finally the dumps are send to the initialized Java Card.
 
-
+{{{
 # Copyright 2009 Jean-Francois Houzard, Olivier Roger
 #
 # This file is part of pypassport.
@@ -64,3 +64,4 @@ r = reader.ReaderManager().waitForCard()
 epc = epassportcreation.EPassportCreator(None, None, r)
 epc.setEPassport(ep)
 print epc.toJCOP()
+}}}
