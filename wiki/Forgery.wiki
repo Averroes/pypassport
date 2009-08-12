@@ -1,6 +1,6 @@
 #summary API 1.0 Forgery Example
 
-The forgery script requires java to be installed
+The forgery script requires java to be installed, and requires to paste a copy of the createSOD.jar on the same directory that your forgery python script. The archive can be found in the genpassport directory of the pypassport API.
 
 {{{
 # Copyright 2009 Jean-Francois Houzard, Olivier Roger
