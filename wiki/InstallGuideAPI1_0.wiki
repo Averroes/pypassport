@@ -76,5 +76,5 @@ The applet will be later uploaded to the JCOP card of your choice.
  # cd pypassport-1.0
  # python setup.py install
 
-[http://code.google.com/p/pypassport/wiki/API_1_0_User_Guide You can then follow the user guide to learn how to use the API.] or [http://code.google.com/p/pypassport/wiki/API_1_0_Usage_Example try the working example.]
+[http://code.google.com/p/pypassport/wiki/API_1_0_User_Guide You can then follow the user guide to learn how to use the API], or [http://code.google.com/p/pypassport/wiki/API_1_0_Usage_Example try the working example.]
  
