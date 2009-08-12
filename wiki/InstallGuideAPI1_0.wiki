@@ -36,13 +36,26 @@ Add the python directory to the path variable displayed in the Environment Varia
 
 === 2.1.5 OpenSSL ===
 
- # [http://www.slproweb.com/products/Win32OpenSSL.html Download the OpenSSL binary Win32 OpenSSL v0.9.8k Light]
+ # [http://www.slproweb.com/products/Win32OpenSSL.html Download Win32 OpenSSL v0.9.8k Light]
  # Install it
  # Add the OpenSSL/bin directory to the path variable displayed in the Environment Variable panel.
 
-PIL
-GPShell
-dexlab
+== 2.2 ePassport Forgery ==
+
+=== 2.2.1 PIL ===
+
+ # [http://www.pythonware.com/products/pil/  Download Python Imaging Library 1.1.6 for Python 2.6]
+ #Install it
+
+=== 2.2.2 GPShell ===
+ # [http://sourceforge.net/projects/globalplatform/ Download GPShell]
+ # Unzip it
+ # Add the GPShell-x.x.x directory to the path variable displayed in the Environment Variable panel.
+
+=== 2.2.3 dexlab ePassport emulator===
+ # [http://www.dexlab.nl/downloads.html Download ePassport emulator]
+ 
+The applet will be later uploaded to the JCOP card of your choice.
 
 
 = 3. pyPassport installation =
