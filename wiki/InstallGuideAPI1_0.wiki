@@ -9,7 +9,9 @@ Add the python directory to the path variable displayed in the Environment Varia
 
 = 2. Dependances =
 
-== 2.1 ePassport Verification ==
+There are two kind of dependences. The first ones are for the basic ePassport data groups reading and verification procedures such as Active Authentication and Passive Authentication. The seconds are for the ePassport forgery such as data group creation and the applet installation on the java card. 
+
+== 2.1 ePassport Reading and Verification ==
 
 === 2.1.1 Setup tool ===
 
@@ -42,10 +44,19 @@ Add the python directory to the path variable displayed in the Environment Varia
 
 == 2.2 ePassport Forgery ==
 
-=== 2.2.1 PIL ===
+=== 2.2.1 Data Groups Forgery ===
+
+The following dependence is needed for the data group DG2 forgery.
+
+==== 2.2.1.2 PIL ====
 
  # [http://www.pythonware.com/products/pil/  Download Python Imaging Library 1.1.6 for Python 2.6]
  #Install it
+
+=== 2.2.2 ePassport emulator uploading ===
+
+The following dependences are requries if you plan to upload the dexlab applet on your
+java card using the pyPassport API, for later upload the forger data groups.
 
 === 2.2.2 GPShell ===
  # [http://sourceforge.net/projects/globalplatform/ Download GPShell]
@@ -64,4 +75,6 @@ The applet will be later uploaded to the JCOP card of your choice.
  # Unzip it
  # cd pypassport-1.0
  # python setup.py install
+
+You can then follow the user guide to learn how to use the API.
  
