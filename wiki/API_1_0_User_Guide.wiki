@@ -7,6 +7,7 @@ Before starting using the API, modules are imported:
 
 {{{
 >>> from pypassport import epassport, reader
+>>> from pypassport.doc9303 import converter
 }}}
 
 = 2 Data Sources =
@@ -38,11 +39,15 @@ number are given to the method:
 == 2.2 Simulator ==
 
 The simulator is created by asking to the ReaderManager factory the DumpReader
-implementation. In this case, the connect does not take the PCSC reader number
+implementation. The simulator is configured to read files named using the Golden Reader Tool naming convention with a '.bin' file extension.
+
+In this case, the connect does not take the PCSC reader number
 anymore but the dump directory.
 
 {{{
 >>> r = reader.ReaderManager().create("DumpReader")
+>>> r.format = converter.types.GRT
+>>> r.ext = ".bin"
 >>> r.connect("d:\\dumps")
 }}}
 
